@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaBridge | AI Subsidy Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NovaBridge</h1>
+            <p class="subtitle">Empowering everyone with AI-driven government assistance</p>
+        </header>
+
+        <main>
+            <section class="input-panel card">
+                <div class="input-group">
+                    <label for="message">What do you need help with?</label>
+                    <textarea id="message" placeholder="e.g. I want to apply for electricity subsidy" rows="3"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="document">Upload supporting document</label>
+                    <div class="file-upload">
+                        <input type="file" id="document" accept="image/*">
+                        <span class="file-info" id="fileName">No file selected</span>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="runWorkflow" class="btn-primary">Run Workflow</button>
+                    <button id="runAgent" class="btn-secondary">Run AI Agent</button>
+                </div>
+            </section>
+
+            <section class="results-panel card">
+                <h2>Workflow Results</h2>
+                <div id="statusIndicator" class="status-badge hidden"></div>
+                <div id="loader" class="loader hidden"></div>
+                <div id="resultContent" class="result-content">
+                    <p class="placeholder-text">Run a workflow or AI Agent to see results.</p>
+                </div>
+                <div id="stepTags" class="step-tags hidden"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 NovaBridge AI. Built for Amazon Nova Hackathon.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

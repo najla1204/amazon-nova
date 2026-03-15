@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+boto3
+langchain
+langchain-community
+langchain-aws
+pydantic
+python-dotenv
+python-multipart
